@@ -8,7 +8,6 @@ Application Number: IN26011530
 
 Batch Number: 1A
 
-
 ## Objective
 The aim of this project is to develop a Logistic Regression model capable of predicting whether a customer is likely to leave a telecommunications service based on demographic information and service-related attributes.
 
