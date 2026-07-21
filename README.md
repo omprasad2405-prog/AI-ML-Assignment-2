@@ -1,14 +1,13 @@
 # Customer Churn Prediction using Logistic Regression
 
-Name: Ashmit Kumar
+Name: OM PRASAD
 
-Registration Number: 23BCE10453
+Registration Number: 23BCG10091
 
-Application Number: IN26011531
+Application Number: IN26011530
 
 Batch Number: 1A
 
-Email ID: ashmit.23bce10453@vitbhopal.ac.in
 
 ## Objective
 The aim of this project is to develop a Logistic Regression model capable of predicting whether a customer is likely to leave a telecommunications service based on demographic information and service-related attributes.
