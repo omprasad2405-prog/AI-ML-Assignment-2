@@ -23,16 +23,28 @@ The aim of this project is to develop a Logistic Regression model capable of pre
 - `scikit-learn`
 - `kaggle`
 
-## Methodology
-1. **Dataset Exploration**: Imported the customer churn dataset and examined its features to distinguish numerical and categorical variables while identifying `Churn` as the prediction target.
-2. **Data Preparation**:
-   - Converted the `TotalCharges` column to a numeric format and filled missing values using the median.
-   - Transformed the `Churn` column into binary values (`Yes` = 1, `No` = 0).
-   - Applied One-Hot Encoding to categorical attributes with `drop_first=True` to prevent redundancy.
-   - Scaled all input features using `StandardScaler` to improve the stability and performance of the Logistic Regression algorithm.
-3. **Train-Test Split**: Separated the processed dataset into training (80%) and testing (20%) subsets using `train_test_split`.
-4. **Model Training**: Built a Logistic Regression classifier with `max_iter=1000` and trained it on the standardized training data.
-5. **Performance Assessment**: Measured the model's effectiveness using Accuracy, Precision, Recall, F1-Score, and visualized the results with a Confusion Matrix.
+Methodology
+The project follows a structured data science workflow divided into distinct tasks:
+
+Data Understanding:
+
+Loaded the dataset and examined the initial records.
+Categorized features into numerical (e.g., tenure, MonthlyCharges), categorical (e.g., Contract, PaymentMethod), and identified the target variable (Churn).
+Data Preprocessing:
+
+Missing Values: Handled blank space entries in the TotalCharges column (associated with new customers) by coercing them to NaN and dropping the affected rows.
+Feature Engineering/Encoding: Converted the target variable (Yes/No) into binary format (1/0). Applied One-Hot Encoding (pd.get_dummies()) to transform categorical text variables into machine-readable numerical formats.
+Data Splitting: Split the dataset into an 80% training set and a 20% testing set to ensure objective evaluation.
+Scaling: Applied Standard Scaling to continuous numerical variables to optimize the Logistic Regression algorithm's convergence and performance.
+Model Development:
+
+Instantiated a Logistic Regression model.
+Trained (fitted) the model using the 80% training data.
+Generated churn predictions on the unseen 20% test dataset.
+Model Evaluation:
+
+Evaluated the model against standard classification metrics: Accuracy, Precision, Recall, and F1-Score.
+Analyzed the Confusion Matrix to understand the distribution of True Positives, True Negatives, False Positives, and False Negatives.
 
 ## Results
 - **Accuracy:** 81.97%
